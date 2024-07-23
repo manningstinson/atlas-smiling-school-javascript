@@ -1,0 +1,506 @@
+:root {
+  --main-color: #c271ff;
+  --opacity-value: 0.9;
+  --background-color: #071629;
+  --font-family-1: "Source Sans Pro", sans-serif;
+  --font-family-2: "Spin Cycle OT", sans-serif;
+  --font-family-3: Coiny, sans-serif;
+  --color-white: #ffffff;
+  --nav-line-height: 2px;
+  --pros-padding: 62px;
+  --quotes-arrows-pad: 300px;
+  --popular-arrows-x: -6vw;
+  --smile-p-margin: 20px;
+  --check-color: #82d24f;
+  --faq-pad-inner: 8vw;
+  --faq-pad-outer: 7vw;
+}
+
+/* General Styles */
+.body {
+  font-family: var(--font-family-1);
+}
+
+.main-color {
+  color: var(--main-color);
+}
+
+.section-header h2 {
+  font-weight: 300;
+}
+
+.section-header span {
+  font-weight: bold;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: var(--opacity-value);
+}
+
+/* Add underline to the nav-link */
+.navbar-nav .nav-link {
+  position: relative;
+  display: inline-block;
+  color: var(--color-white);
+  padding-bottom: 5px; /* Add some padding to the bottom */
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover:after,
+.navbar-nav .nav-link.active:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+
+/* Navigation Menu */
+.navbar-nav .nav-link {
+  font-size: 14px; /* Adjust the size as needed */
+}
+
+/* Increase the size of the logo */
+.navbar-brand img {
+  width: 150px; /* Increase the size as needed */
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 75px;
+}
+
+.hero h1 {
+  font-size: 120px;
+}
+
+.hero .list-group-item {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  color: #fff;
+}
+
+.btn.btn-smile {
+  background-color: var(--main-color);
+  width: 162px;
+  height: 44px;
+  font-size: 14px;
+  border-radius: 22px;
+  filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+}
+
+.hero-learn {
+  font-size: 2rem;
+  margin-top: 168px;
+  margin-bottom: 0;
+}
+
+.hero-learn span {
+  color: var(--main-color);
+}
+
+/* Pros Section */
+.pros h3 {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 27px;
+}
+
+.pros img {
+  width: 150px;
+  border-radius: 75px;
+}
+
+.pros span {
+  display: block;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.pros {
+  padding-top: 87px;
+  padding-bottom: 98px;
+}
+
+/* Quotes Section */
+.quotes {
+  height: 392px;
+  background-color: var(--main-color);
+}
+
+.quotes .carousel-item img {
+  width: 160px;
+  border-radius: 75px;
+  margin-left: 10px;
+}
+
+.quote-text {
+  padding-left: 53px;
+}
+
+.quotes .row [class*=col] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.quote-text p {
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 22px;
+}
+
+.quote-text h4 {
+  font-size: 22px;
+}
+
+.quote-text span {
+  font-style: italic;
+  font-size: 22px;
+}
+
+.carousel-control-prev img,
+.carousel-control-next img {
+  width: 30px;
+}
+
+.quotes .carousel-control-prev.arrow-left {
+  padding-right: var(--quotes-arrows-pad);
+}
+
+.quotes .carousel-control-next.arrow-right {
+  padding-left: var(--quotes-arrows-pad);
+}
+
+/* Popular Section */
+.popular {
+  height: auto;
+  background-color: var(--color-white);
+}
+
+.popular .section-header {
+  padding-top: 87px;
+  padding-bottom: 75px;
+  color: var(--background-color);
+}
+
+.section .card {
+  border: 0;
+  width: 16rem;
+}
+
+.popular .card {
+  padding-bottom: 87px;
+}
+
+.section .card-img-overlay {
+  /* top: 25px; */
+  top: 5%;
+}
+
+.section .card-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: var --background-color;
+}
+
+.section .card-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.popular .carousel-control-prev,
+.popular .carousel-control-next {
+  width: 60px;
+}
+
+.popular .carousel-control-prev.arrow-left {
+  left: var(--popular-arrows-x);
+}
+
+.popular .carousel-control-next.arrow-right {
+  right: var(--popular-arrows-x);
+}
+
+/* Smiles Section */
+.smiles {
+  height: auto;
+  background: var(--background-color);
+}
+
+.smiles .section-header {
+  padding-top: 70px;
+  padding-bottom: 58px;
+}
+
+.smiles .row h3 {
+  font-size: 18px;
+  margin-bottom: 13px;
+  margin-top: 26px;
+}
+
+.smiles .row p {
+  font-size: 14px;
+  line-height: 26px;
+  padding: 0;
+  margin-bottom: 0px;
+  margin-left: var(--smile-p-margin);
+  margin-right: var(--smile-p-margin);
+}
+
+.smiles .row {
+  padding-bottom: 85px;
+}
+
+.register-btn {
+  padding-bottom: 52px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #071629;
+  padding: 20px 0;
+  color: var(--color-white);
+}
+
+.footer .container {
+  height: 100%;
+}
+
+.footer .row {
+  height: 100%;
+}
+
+.footer .footer-item {
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.footer .social-item {
+  font-size: 30px;
+}
+
+.footer .social-item a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.footer .social {
+  display: flex;
+}
+
+.footer .social .social-item {
+  margin: 0 10px;
+}
+
+.footer .social .social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer .trademark {
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+/* General Styles */
+@media screen and (max-width: 575px) {
+  .hero h1 {
+    font-size: 61px;
+  }
+  .pricing-header .navbar-nav li:nth-child(2) a:after {
+    width: 0%;
+  }
+  .courses-header .navbar-nav li:nth-child(1) a:after {
+    width: 0%;
+  }
+}
+/* Pros Section */
+@media screen and (max-width: 767px) {
+  .pro1,
+  .pro2 {
+    padding-bottom: 58px;
+  }
+}
+/* Quotes Section */
+@media screen and (max-width: 991px) {
+  .quotes .carousel-item img {
+    margin-left: 80px;
+  }
+  .quote-text {
+    padding-left: 43px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .quotes .carousel-item img {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  :root {
+    --arrow-move-y: 40%;
+    --arrow-move-x: 13px;
+  }
+  .quotes {
+    height: auto;
+  }
+  .quotes .carousel-item img {
+    margin: 90px auto 0 auto;
+    padding-bottom: 10px;
+  }
+  .quotes .carousel-item .quote-text {
+    padding-bottom: 103px;
+  }
+  .quotes .carousel-control-prev.arrow-left {
+    bottom: var(--arrow-move-y);
+    left: var(--arrow-move-x);
+  }
+  .quotes .carousel-control-next.arrow-right {
+    bottom: var(--arrow-move-y);
+    right: var(--arrow-move-x);
+  }
+  .quote-text {
+    padding: 0px;
+    padding-top: 24px;
+  }
+}
+/* Popular Section */
+@media screen and (max-width: 1280px) {
+  :root {
+    --popular-arrows-x: -4vw;
+  }
+  .section .card {
+    width: 19vw;
+  }
+}
+@media screen and (max-width: 1150px) {
+  :root {
+    --popular-arrows-x: -3vw;
+  }
+  .section .card-img-overlay {
+    top: 4%;
+  }
+  .section .card-img-overlay img {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 991px) {
+  :root {
+    --popular-arrows-x: -3vw;
+  }
+  .section .card {
+    width: 16rem;
+  }
+  .section .card-img-overlay img {
+    width: 30%;
+  }
+  .section .card-img-overlay {
+    top: 5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  :root {
+    --popular-arrows-x: -6vw;
+  }
+  .section .card {
+    width: 16rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  :root {
+    --popular-arrows-x: -15px;
+  }
+  .section .card-img-overlay img {
+    width: 30%;
+  }
+  .section .card-img-overlay {
+    top: 5%;
+  }
+}
+/* Smiles Section */
+@media screen and (max-width: 991px) {
+  :root {
+    --smile-p-margin: 5vw;
+    --smile-padding: 60px;
+  }
+  .smile1,
+  .smile2 {
+    padding-bottom: 58px;
+  }
+  .row .smile1,
+  .row .smile2,
+  .row .smile3,
+  .row .smile4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .row .smile1,
+  .row .smile3 {
+    padding-left: var(--smile-padding);
+  }
+  .row .smile2,
+  .row .smile4 {
+    padding-right: var(--smile-padding);
+  }
+}
+@media screen and (max-width: 576px) {
+  :root {
+    --smile-p-margin: 20vw;
+    --smile-padding: 0;
+  }
+  .smile1,
+  .smile2,
+  .smile3 {
+    padding-bottom: 50px;
+  }
+}
+/* Footer Section */
+@media screen and (max-width: 991px) {
+  .footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer {
+    height: auto;
+    text-align: center;
+  }
+  .footer .row {
+    height: auto;
+  }
+  .footer .trademark {
+    margin-top: 15px;
+    padding-bottom: 0;
+  }
+  .footer .row {
+    padding-top: 50px;
+    padding-bottom: 34px;
+  }
+  .footer .social.nav {
+    padding: 0px;
+  }
+  .footer .social {
+    padding: 45px 0;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=base.css.map */

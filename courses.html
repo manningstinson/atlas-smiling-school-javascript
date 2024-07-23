@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>holberton-smiling</title>
+    <!-- Custom and Font Styles  -->
+    <link rel="stylesheet" href="dist/base.css" />
+    <link rel="stylesheet" href="dist/courses.css" />
+    <link rel="stylesheet" href="dist/fonts.css" />
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Coiny&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="body">
+    <header
+      class="header courses-header"
+      style="background-image: url('assets/img/courses-hero.jpg')"
+    >
+      <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-dark pt-4 px-0">
+          <button
+            class="navbar-toggler border-0 align-self-start mt-3"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-line1"></span>
+            <span class="navbar-line2 my-1"></span>
+            <span class="navbar-line3"></span>
+          </button>
+          <a
+            class="navbar-brand mx-auto d-flex flex-column flex-sm-row align-items-center mt-3"
+            href="index.html"
+          >
+            <img
+              src="assets/img/logo.svg"
+              alt="navbar-logo-text"
+              width="114px"
+              class="mr-4 img-fluid"
+            />
+          </a>
+          <div class="collapse navbar-collapse text-center mt-3" id="navbarNav">
+            <ul class="navbar-nav ml-auto font-weight-bold">
+              <li class="nav-item">
+                <a class="nav-link text-white px-1" href="courses.html"
+                  >COURSES</a
+                >
+              </li>
+              <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
+                <a class="nav-link text-white px-1" href="pricing.html"
+                  >PRICING</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-1" href="index.html">LOGIN</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <section class="hero text-center text-white d-none d-sm-block">
+          <h1 class="my-0">
+            « Don’t cry because it’s over.<br /><span class="main-color"
+              >Smile</span
+            >
+            because it happened. »
+          </h1>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="section search">
+        <div class="container">
+          <div class="row py-4">
+            <div class="col-12 col-sm-12 col-lg-4 box1">
+              <span class="text-white font-weight-bold drop-down-title"
+                >KEYWORDS</span
+              >
+
+              <div class="input-group mb-sm-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control search-text-area"
+                  aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default"
+                  placeholder="Search by keywords"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 box2">
+              <span class="text-white font-weight-bold drop-down-title"
+                >TOPIC</span
+              >
+              <div class="dropdown">
+                <a
+                  class="btn dropdown-toggle text-left"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span>Novice</span>
+                </a>
+
+                <div
+                  class="dropdown-menu mt-0"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Novice</a>
+                  <a class="dropdown-item" href="#">Intermediate</a>
+                  <a class="dropdown-item" href="#">Expert</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 box3">
+              <span class="text-white font-weight-bold drop-down-title"
+                >SORT BY</span
+              >
+              <div class="dropdown">
+                <a
+                  class="btn dropdown-toggle text-left"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span>Most Popular</span>
+                </a>
+
+                <div
+                  class="dropdown-menu mt-0"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Most Popular</a>
+                  <a class="dropdown-item" href="#">Most Recent</a>
+                  <a class="dropdown-item" href="#">Most Viewed</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section results">
+        <div class="container">
+          <div class="section-title">
+            <span class="text-muted video-count">11 videos</span>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
+              <div class="card">
+                <img
+                  src="assets/img/thumbnail_4.jpg"
+                  class="card-img-top"
+                  alt="Video thumbnail"
+                />
+                <div class="card-img-overlay text-center">
+                  <img
+                    src="assets/img/play.png"
+                    alt="Play"
+                    width="64px"
+                    class="align-self-center play-overlay"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="creator d-flex align-items-center">
+                    <img
+                      src="assets/img/profile_1.jpg"
+                      alt="Creator of Video"
+                      width="30px"
+                      class="rounded-circle"
+                    />
+                    <h6 class="pl-3 m-0 main-color">Phillip Massey</h6>
+                  </div>
+                  <div class="info pt-3 d-flex justify-content-between">
+                    <div class="rating">
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_off.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                    </div>
+                    <span class="main-color">8 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
+              <div class="card">
+                <img
+                  src="assets/img/thumbnail_3.jpg"
+                  class="card-img-top"
+                  alt="Video thumbnail"
+                />
+                <div class="card-img-overlay text-center">
+                  <img
+                    src="assets/img/play.png"
+                    alt="Play"
+                    width="64px"
+                    class="align-self-center play-overlay"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Sad Smile</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="creator d-flex align-items-center">
+                    <img
+                      src="assets/img/profile_1.jpg"
+                      alt="Creator of Video"
+                      width="30px"
+                      class="rounded-circle"
+                    />
+                    <h6 class="pl-3 m-0 main-color">Phillip Massey</h6>
+                  </div>
+                  <div class="info pt-3 d-flex justify-content-between">
+                    <div class="rating">
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_off.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                    </div>
+                    <span class="main-color">8 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
+              <div class="card">
+                <img
+                  src="assets/img/thumbnail_1.jpg"
+                  class="card-img-top"
+                  alt="Video thumbnail"
+                />
+                <div class="card-img-overlay text-center">
+                  <img
+                    src="assets/img/play.png"
+                    alt="Play"
+                    width="64px"
+                    class="align-self-center play-overlay"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Natural Smile</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="creator d-flex align-items-center">
+                    <img
+                      src="assets/img/profile_1.jpg"
+                      alt="Creator of Video"
+                      width="30px"
+                      class="rounded-circle"
+                    />
+                    <h6 class="pl-3 m-0 main-color">Phillip Massey</h6>
+                  </div>
+                  <div class="info pt-3 d-flex justify-content-between">
+                    <div class="rating">
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_off.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                    </div>
+                    <span class="main-color">8 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
+              <div class="card">
+                <img
+                  src="assets/img/thumbnail_2.jpg"
+                  class="card-img-top"
+                  alt="Video thumbnail"
+                />
+                <div class="card-img-overlay text-center">
+                  <img
+                    src="assets/img/play.png"
+                    alt="Play"
+                    width="64px"
+                    class="align-self-center play-overlay"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Happy Smile</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="creator d-flex align-items-center">
+                    <img
+                      src="assets/img/profile_1.jpg"
+                      alt="Creator of Video"
+                      width="30px"
+                      class="rounded-circle"
+                    />
+                    <h6 class="pl-3 m-0 main-color">Phillip Massey</h6>
+                  </div>
+                  <div class="info pt-3 d-flex justify-content-between">
+                    <div class="rating">
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_off.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                    </div>
+                    <span class="main-color">8 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
+              <div class="card">
+                <img
+                  src="assets/img/thumbnail_4.jpg"
+                  class="card-img-top"
+                  alt="Video thumbnail"
+                />
+                <div class="card-img-overlay text-center">
+                  <img
+                    src="assets/img/play.png"
+                    alt="Play"
+                    width="64px"
+                    class="align-self-center play-overlay"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="creator d-flex align-items-center">
+                    <img
+                      src="assets/img/profile_1.jpg"
+                      alt="Creator of Video"
+                      width="30px"
+                      class="rounded-circle"
+                    />
+                    <h6 class="pl-3 m-0 main-color">Phillip Massey</h6>
+                  </div>
+                  <div class="info pt-3 d-flex justify-content-between">
+                    <div class="rating">
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_off.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                    </div>
+                    <span class="main-color">8 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
+              <div class="card">
+                <img
+                  src="assets/img/thumbnail_3.jpg"
+                  class="card-img-top"
+                  alt="Video thumbnail"
+                />
+                <div class="card-img-overlay text-center">
+                  <img
+                    src="assets/img/play.png"
+                    alt="Play"
+                    width="64px"
+                    class="align-self-center play-overlay"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Sad Smile</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="creator d-flex align-items-center">
+                    <img
+                      src="assets/img/profile_1.jpg"
+                      alt="Creator of Video"
+                      width="30px"
+                      class="rounded-circle"
+                    />
+                    <h6 class="pl-3 m-0 main-color">Phillip Massey</h6>
+                  </div>
+                  <div class="info pt-3 d-flex justify-content-between">
+                    <div class="rating">
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_off.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                    </div>
+                    <span class="main-color">8 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
+              <div class="card">
+                <img
+                  src="assets/img/thumbnail_1.jpg"
+                  class="card-img-top"
+                  alt="Video thumbnail"
+                />
+                <div class="card-img-overlay text-center">
+                  <img
+                    src="assets/img/play.png"
+                    alt="Play"
+                    width="64px"
+                    class="align-self-center play-overlay"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Natural Smile</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="creator d-flex align-items-center">
+                    <img
+                      src="assets/img/profile_1.jpg"
+                      alt="Creator of Video"
+                      width="30px"
+                      class="rounded-circle"
+                    />
+                    <h6 class="pl-3 m-0 main-color">Phillip Massey</h6>
+                  </div>
+                  <div class="info pt-3 d-flex justify-content-between">
+                    <div class="rating">
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_off.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                    </div>
+                    <span class="main-color">8 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
+              <div class="card">
+                <img
+                  src="assets/img/thumbnail_2.jpg"
+                  class="card-img-top"
+                  alt="Video thumbnail"
+                />
+                <div class="card-img-overlay text-center">
+                  <img
+                    src="assets/img/play.png"
+                    alt="Play"
+                    width="64px"
+                    class="align-self-center play-overlay"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Happy Smile</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="creator d-flex align-items-center">
+                    <img
+                      src="assets/img/profile_1.jpg"
+                      alt="Creator of Video"
+                      width="30px"
+                      class="rounded-circle"
+                    />
+                    <h6 class="pl-3 m-0 main-color">Phillip Massey</h6>
+                  </div>
+                  <div class="info pt-3 d-flex justify-content-between">
+                    <div class="rating">
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_off.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                    </div>
+                    <span class="main-color">8 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
+              <div class="card">
+                <img
+                  src="assets/img/thumbnail_4.jpg"
+                  class="card-img-top"
+                  alt="Video thumbnail"
+                />
+                <div class="card-img-overlay text-center">
+                  <img
+                    src="assets/img/play.png"
+                    alt="Play"
+                    width="64px"
+                    class="align-self-center play-overlay"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="creator d-flex align-items-center">
+                    <img
+                      src="assets/img/profile_1.jpg"
+                      alt="Creator of Video"
+                      width="30px"
+                      class="rounded-circle"
+                    />
+                    <h6 class="pl-3 m-0 main-color">Phillip Massey</h6>
+                  </div>
+                  <div class="info pt-3 d-flex justify-content-between">
+                    <div class="rating">
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_off.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                    </div>
+                    <span class="main-color">8 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
+              <div class="card">
+                <img
+                  src="assets/img/thumbnail_3.jpg"
+                  class="card-img-top"
+                  alt="Video thumbnail"
+                />
+                <div class="card-img-overlay text-center">
+                  <img
+                    src="assets/img/play.png"
+                    alt="Play"
+                    width="64px"
+                    class="align-self-center play-overlay"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Sad Smile</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="creator d-flex align-items-center">
+                    <img
+                      src="assets/img/profile_1.jpg"
+                      alt="Creator of Video"
+                      width="30px"
+                      class="rounded-circle"
+                    />
+                    <h6 class="pl-3 m-0 main-color">Phillip Massey</h6>
+                  </div>
+                  <div class="info pt-3 d-flex justify-content-between">
+                    <div class="rating">
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_off.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                    </div>
+                    <span class="main-color">8 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
+              <div class="card">
+                <img
+                  src="assets/img/thumbnail_1.jpg"
+                  class="card-img-top"
+                  alt="Video thumbnail"
+                />
+                <div class="card-img-overlay text-center">
+                  <img
+                    src="assets/img/play.png"
+                    alt="Play"
+                    width="64px"
+                    class="align-self-center play-overlay"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Natural Smile</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="creator d-flex align-items-center">
+                    <img
+                      src="assets/img/profile_1.jpg"
+                      alt="Creator of Video"
+                      width="30px"
+                      class="rounded-circle"
+                    />
+                    <h6 class="pl-3 m-0 main-color">Phillip Massey</h6>
+                  </div>
+                  <div class="info pt-3 d-flex justify-content-between">
+                    <div class="rating">
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_on.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                      <img
+                        src="assets/img/star_off.png"
+                        alt="star on"
+                        width="15px"
+                      />
+                    </div>
+                    <span class="main-color">8 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="row d-flex align-items-center flex-column flex-sm-row">
+          <div
+            class="col-12 col-sm-4 d-flex justify-content-center justify-content-sm-start footer-item"
+          >
+            <img
+              src="assets/img/logo.svg"
+              alt="SmileSchool Logo"
+              width="150px"
+              class="mr-4 img-fluid"
+            />
+          </div>
+          <div
+            class="col-12 col-sm-4 d-flex align-items-center justify-content-center order-2 order-sm-0 footer-item"
+          >
+            <div class="trademark text-muted">
+              <span>©smileschool 2020</span>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-4 d-flex align-items-center justify-content-center justify-content-sm-end footer-item"
+          >
+            <div class="social">
+              <ul class="social nav">
+                <li class="social-item">
+                  <a
+                    href="https://www.facebook.com/HolbertonSchool/"
+                    class="social-link"
+                    aria-label="Facebook"
+                  >
+                    <img
+                      src="assets/img/facebook.svg"
+                      alt="Facebook"
+                      class="social-icon"
+                    />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a
+                    href="https://twitter.com/holbertonschool"
+                    class="social-link"
+                    aria-label="Twitter"
+                  >
+                    <img
+                      src="assets/img/twitter.svg"
+                      alt="Twitter"
+                      class="social-icon"
+                    />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a
+                    href="https://www.instagram.com/holbertonschool/"
+                    class="social-link"
+                    aria-label="Instagram"
+                  >
+                    <img
+                      src="assets/img/instagram.svg"
+                      alt="Instagram"
+                      class="social-icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "atlas-smiling-school",
+  "version": "1.0.0",
+  "description": "Atlas Smiling School - responsive bootstrap project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.6"
+  }
+}
