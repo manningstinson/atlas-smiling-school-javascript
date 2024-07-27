@@ -8,11 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("https://smileschool-api.hbtn.info/popular-tutorials")
     .then((response) => response.json())
     .then((data) => {
+      const tutorials = data.slice(0, 4); // Only take the first 4 tutorials
       carouselInner.innerHTML = "";
-      for (let i = 0; i < data.length; i += 4) {
+
+      for (let i = 0; i < 3; i++) {
+        // Create 3 slides, all duplicates
         const isActive = i === 0 ? "active" : "";
-        const tutorialItems = data
-          .slice(i, i + 4)
+        const tutorialItems = tutorials
           .map(
             (tutorial) => `
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center justify-content-md-end justify-content-lg-center">
@@ -42,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `
           )
           .join("");
+
         const carouselItem = `
           <div class="carousel-item ${isActive}">
             <div class="row align-items-center mx-auto">
