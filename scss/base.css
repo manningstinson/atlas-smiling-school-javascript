@@ -142,21 +142,23 @@
 
 /* Quotes Section */
 .quotes {
-  height: 392px;
   background-color: var(--main-color);
+  padding: 40px 0; /* Add padding to avoid text overflow */
 }
 
 .quotes .carousel-item img {
   width: 160px;
   border-radius: 75px;
-  margin-left: 10px;
+  margin: 0 auto; /* Center the image */
 }
 
 .quote-text {
   padding-left: 53px;
+  padding-right: 53px;
+  text-align: center; /* Center align text */
 }
 
-.quotes .row [class*=col] {
+.quotes .row [class*="col"] {
   padding-left: 0;
   padding-right: 0;
 }
@@ -187,6 +189,17 @@
 
 .quotes .carousel-control-next.arrow-right {
   padding-left: var(--quotes-arrows-pad);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 767px) {
+  .quotes .carousel-item img {
+    margin-top: 20px; /* Add margin to avoid overlap */
+  }
+  .quote-text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 /* Popular Section */

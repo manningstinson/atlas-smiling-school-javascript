@@ -27,7 +27,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "mkdirp dist && sass scss/base.scss dist/base.css && sass scss/courses.scss dist/courses.css && sass scss/fonts.scss dist/fonts.css && sass scss/pricing.scss dist/pricing.css"
+    "build-css": "mkdirp dist && sass scss/base.scss dist/base.css && sass scss/courses.scss dist/courses.css && sass scss/fonts.scss dist/fonts.css && sass scss/pricing.scss dist/pricing.css",
+    "watch-css": "sass --watch scss/base.scss:dist/base.css scss/fonts.scss:dist/fonts.css scss/courses.scss:dist/courses.css scss/pricing.scss:dist/pricing.css"
   },
   "keywords": [],
   "author": "",
